@@ -26,7 +26,7 @@ function App() {
           next.setAttribute("data-show", "");
         }
       },
-      isHovering ? 0 : 2000
+      isHovering ? 0 : 1000
     );
 
     return () => clearInterval(interval);
