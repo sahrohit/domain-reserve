@@ -14,7 +14,7 @@ function App() {
         show.nextElementSibling || document.querySelector("span:first-child");
       const up = document.querySelector("span[data-up]");
 
-      if (!isHovering) {
+      // if (!isHovering) {
         if (up) {
           up.removeAttribute("data-up");
         }
@@ -23,7 +23,7 @@ function App() {
         show.setAttribute("data-up", "");
 
         next.setAttribute("data-show", "");
-      }
+      // }
     }, 2000);
 
     return () => clearInterval(interval);
