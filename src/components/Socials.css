@@ -1,12 +1,10 @@
-.facebook_icon,
-.linkedin_icon,
-.twitter_icon {
+.icon2 {
   padding: 1rem;
   transform: scale(1.8);
   color: white;
 }
 
-.github_icon {
+.icon1 {
   padding: 1rem;
   transform: scale(1.5);
   color: white;

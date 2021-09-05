@@ -16,7 +16,7 @@ const Socials = () => {
           (window.location.href = "https://github.com/sahrohit")
         }
       >
-        <GitHubIcon className="github_icon" />
+        <GitHubIcon className="icon1" />
       </Button>
       <Button
         onClick={(event) =>
@@ -24,7 +24,7 @@ const Socials = () => {
             "https://www.facebook.com/imadeyoureadthis26/")
         }
       >
-        <FacebookIcon className="facebook_icon" />
+        <FacebookIcon className="icon2" />
       </Button>
       <Button
         onClick={(event) =>
@@ -32,14 +32,14 @@ const Socials = () => {
             "https://www.linkedin.com/in/rohit-sah-96a10a1b8/")
         }
       >
-        <LinkedInIcon className="linkedin_icon" />
+        <LinkedInIcon className="icon2" />
       </Button>
       <Button
         onClick={(event) =>
           (window.location.href = "https://twitter.com/sah_rohite")
         }
       >
-        <TwitterIcon className="twitter_icon" />
+        <TwitterIcon className="icon2" />
       </Button>
     </React.Fragment>
   );

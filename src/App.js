@@ -8,26 +8,23 @@ function App() {
   const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(
-      () => {
-        const show = document.querySelector("span[data-show]");
-        const next =
-          show.nextElementSibling || document.querySelector("span:first-child");
-        const up = document.querySelector("span[data-up]");
+    const interval = setInterval(() => {
+      const show = document.querySelector("span[data-show]");
+      const next =
+        show.nextElementSibling || document.querySelector("span:first-child");
+      const up = document.querySelector("span[data-up]");
 
-        if (!isHovering) {
-          if (up) {
-            up.removeAttribute("data-up");
-          }
-
-          show.removeAttribute("data-show");
-          show.setAttribute("data-up", "");
-
-          next.setAttribute("data-show", "");
+      if (!isHovering) {
+        if (up) {
+          up.removeAttribute("data-up");
         }
-      },
-      isHovering ? 0 : 2000
-    );
+
+        show.removeAttribute("data-show");
+        show.setAttribute("data-up", "");
+
+        next.setAttribute("data-show", "");
+      }
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [isHovering]);
